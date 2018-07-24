@@ -1,0 +1,99 @@
+#1 Is Python interpreted, or compiled, or both?
+“https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both”
+
+Python is a compiled+interpreted language..How? It compiles the source code and executes it.
+If compiler is the entity which takes care of showing syntax errors.
+It is a interpreted language because when we write code the interpreter takes care of run  and execution on the fly..There is no compilation process happens when we run the code in interpreter.
+
+
+Data Types:
+
+1. Number
+2. String
+3. List
+4. Tuple
+5. Dict
+
+
+
+Features :
+
+It is interpreted, Interactive, It supports object oriented programming 
+Easy to read, learn, and maintain compared to other languages.
+
+
+What is environment variable?
+
+Environment variable: An environment variable is a dynamic "object" on a computer that stores a value.
+Environment variables are, in short, variables that describe the environment in which programs run
+
+In Windows: Go to Control panel—> Systems —> Environment variable
+In Linux: export PATH = “$PATH:/usr/local/bin/python”
+In Mac: 
+
+
+
+How to check all environment variables through python
+import os
+os.environ
+
+
+how to access dictionary keys.
+
+#1 though square brackets 
+os.environ["TERM_PROGRAM_VERSION"]
+
+#2 through get function 
+os.environ.get(“keys”)
+os.environ.get("guyg8t7”) if keys present it will print value else None
+Q print the value of key “TERM”, else print 15
+os.environ.get(“TERM”, 15)
+
+#How to add a environment variable permanently in MAC or linux through terminal 
+through bashrc_profile
+echo $PATH
+export PATH=$PATH:/usr/local/bin/python3.6
+or 
+set path=$PATH:/usr/local/bin/python3.6
+source ~/.bash_profile
+
+Ramya:~ ramyashreemr$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/OracleInstantClient:/usr/local/bin/python3.6:/Applications/OracleInstantClient
+Ramya:~ ramyashreemr$ pthon3
+-bash: pthon3: command not found
+Ramya:~ ramyashreemr$ python3.6
+Python 3.6.2 (default, Jul 17 2017, 16:44:47)
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+Environmental variables 
+os.environ.get()
+putenv()
+os.environ.clear()  #unset env variables
+os.environ.pop()
+
+
+other functions 
+os.listdir()
+os.getcwd()
+os.chdir()
+os.getgroups()
+os.getgid()
+os.getuid()
+os.getgroups()
+os.getlogin()
+os.getpgid(pid)
+os.getpid()
+os.getppid()
+os.getresuid()
+os.getpgrp()
+os.getresgid()
+
+https://docs.python.org/2/library/os.html
+
+
+
+L
+
+
